@@ -1,0 +1,20 @@
+{
+  "name": "aws-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "help": "echo \"test | create | update | update | monitor | delete\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "aws cloudformation create-stack --stack-name subatomic-payments-rest-api --template-body file://rest-api.yml --capabilities CAPABILITY_NAMED_IAM",
+    "update": "aws cloudformation update-stack --stack-name subatomic-payments-rest-api --template-body file://rest-api.yml --capabilities CAPABILITY_NAMED_IAM",
+    "monitor": "aws cloudformation describe-stack-events --stack-name subatomic-payments-rest-api",
+    "stats":  "aws cloudformation describe-stacks --stack-name subatomic-payments-rest-api --query \"Stacks[0].Outputs[?OutputKey=='ApiUrl'].OutputValue\" --output text",
+    "delete": "aws cloudformation delete-stack --stack-name subatomic-payments-rest-api"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws": "0.0.3-2"
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>This is the title of the webpage!</title>
+  <style>
+    p {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <p id="demo">Goodbye Cruel World</p>
+  <script type="module">
+    import { xhr } from './xhr.js';
+
+    // JAVASCRIPT code goes here between the <script> tags!
+    // Javascript is a different language than HTML, which HTML allows you to embed inside
+
+    // this is a JavaScript comment, it is human readable, and never executed!
+
+    // let’s change the text inside the <p id='demo'> paragraph using Javascript code:
+    // you can label any element with id='some name' HTML puts all ids as javascript variables!
+    // see the <p id="demo"> above?   Because of that 'id', we can refer directly to 'demo' now:
+    demo.innerHTML = "Hello World!";
+
+    ( async () => {
+      // this is going to be blocked by CORS
+      // to get around this, you'll need to host under the same domain...
+      let result = await xhr( "GET", "https://45cc5y9p0d.execute-api.us-west-2.amazonaws.com/dev/hello_world" )
+      console.log( result );
+      demo.innerHTML = result.body;
+    })();
+  </script>
+</body>
+</html>
+
+
