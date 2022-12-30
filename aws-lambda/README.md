@@ -1,5 +1,5 @@
 
-# backend for subatomic payments
+# backend
 
 ## setup AWS CLI:
 
