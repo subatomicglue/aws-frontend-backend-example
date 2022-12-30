@@ -8,8 +8,8 @@ We'll setup a serverless example:
 
 ## Setup:
 ```
-$ cd aws-lambda && npm install
-$ cd frontend && npm install
+$ cd aws-lambda && npm install; cd -
+$ cd frontend && npm install; cd -
 ```
 see [aws-lambda/README.md](aws-lambda/README.md) for instructions to setup AWS CLI and your `~/.aws/credentials`.
 
