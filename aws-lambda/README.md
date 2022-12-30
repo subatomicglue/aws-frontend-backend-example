@@ -1,6 +1,6 @@
 
 # backend
-see [parent](..) for full description
+see [parent](../../..) for full description
 
 ## setup AWS CLI:
 
