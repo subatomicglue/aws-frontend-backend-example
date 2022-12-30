@@ -38,7 +38,8 @@ $ cd frontend && npm start
 
 ## Develop
 Backend:
-- Edit the Lambda function inside [aws-lambda/rest-api.yml](aws-lambda/rest-api.yml), search for `Code`.
+- Edit the Lambda function inside [aws-lambda/rest-api.yml](aws-lambda/rest-api.yml), search for `Code`
+- Search for `PathPart` which defines the endpoint name `/hello_world`
 
 Frontend:
 - Edit the HTML code inside [frontend/src/index.html](frontend/src/index.html)
