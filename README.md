@@ -17,7 +17,7 @@ see [aws-lambda/README.md](aws-lambda/README.md) for instructions to setup AWS C
 Deploy the REST API:
 ```
 $ cd aws-lambda
-$ npm run create      # or update or delete or monitor
+$ npm run create      # or update|delete|monitor|stats
 ```
 
 Serve the frontend:  see `frontend/README.md`
