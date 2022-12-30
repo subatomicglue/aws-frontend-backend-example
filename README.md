@@ -19,12 +19,15 @@ Deploy the REST API:
 $ cd aws-lambda
 
 $ npm run create       # or update|delete|monitor|stats
+```
 
+Then, retrieve your REST API's URL for `<URL>`
+- Paste `<URL>/hello_world` into [frontend/src/index.html](frontend/src/index.html)
+```
 $ npm run stats        # gives the URL of your service
                        # something like
                        # `https://4xkbm7p24a.execute-api.us-west-2.amazonaws.com/dev/hello_world`
 ```
-- Then, paste `<URL>/hello_world` into your `index.html`
 
 
 Serve the frontend:  see `frontend/README.md`
