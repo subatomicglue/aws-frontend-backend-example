@@ -16,24 +16,22 @@ see [aws-lambda/README.md](aws-lambda/README.md) for instructions to setup AWS C
 ## Run it:
 Deploy the REST API:
 ```
-$ cd aws-lambda
-
-$ npm run create       # or update|delete|monitor|stats
+$ cd aws-lambda && npm run create       # or update|delete|monitor|stats
 ```
 
 Then, retrieve your REST API's URL:
 ```
-$ npm run stats        # gives the URL of your service
-                       # something like
-                       # `https://4xkbm7p24a.execute-api.us-west-2.amazonaws.com/dev`
+$ npm run stats
+
+# gives the URL of your service
+# something like https://4xkbm7p24a.execute-api.us-west-2.amazonaws.com/dev
 ```
 - Then paste `<URL>/hello_world` into [frontend/src/index.html](frontend/src/index.html)
 
 
-Serve the frontend:  see `frontend/README.md`
+Serve the frontend:
 ```
-$ cd frontend
-$ npm start
+$ cd frontend && npm start
 
 # then open the URL listed  e.g. http://127.0.0.1:8081
 ```
