@@ -2,9 +2,11 @@
 # backend for subatomic payments
 
 ## setup AWS CLI:
+
+Install AWS CLI for your OS:
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
-Edit `~/.aws/credentials` with:
+Edit your `~/.aws/credentials` with:
 ```
 [default]
 aws_access_key_id = <YOUR AWS ACCESS KEY>
@@ -12,7 +14,16 @@ aws_secret_access_key = <YOUR AWS SECRET ACCESS KEY>
 region=us-west-2
 ```
 
-## install / update / uninstall the REST endpoint into AWSA Lambda
+## Setup
+```
+$ npm install
+$ npm run help     #  get a list of available commands
+```
+
+## Install / Uninstall the REST endpoint into AWS Lambda
+
+NOTE:  these all exist in `package.json`, just do a `npm run help` to see them
+
 ```
 # To create the REST API stack:
 aws cloudformation create-stack \
