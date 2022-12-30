@@ -1,6 +1,6 @@
 # AWS front/backend example
 
-We'll setup a serverless example:
+We'll setup a [serverless](https://aws.amazon.com/serverless/) example:
 - Cloudformation YML script to set up the serverless infrastrcuture
   - AWS Lambda Function
   - AWS Gateway to create a REST API on top of the Lambda Function
