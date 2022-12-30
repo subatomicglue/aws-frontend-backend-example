@@ -4,8 +4,7 @@
   "description": "",
   "main": "api.js",
   "scripts": {
-    "help": "echo \"test | create | update | update | delete | monitor | stats\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "help": "echo \"create | update | update | delete | monitor | stats\"",
     "create": "aws cloudformation create-stack --stack-name subatomic-rest-api-example --template-body file://rest-api.yml --capabilities CAPABILITY_NAMED_IAM",
     "update": "aws cloudformation update-stack --stack-name subatomic-rest-api-example --template-body file://rest-api.yml --capabilities CAPABILITY_NAMED_IAM",
     "monitor": "aws cloudformation describe-stack-events --stack-name subatomic-rest-api-example",

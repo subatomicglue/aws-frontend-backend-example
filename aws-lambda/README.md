@@ -23,15 +23,15 @@ $ npm run help     #  get a list of available commands
 
 ## Install / Uninstall the REST endpoint into AWS Lambda
 
-NOTE:  these all exist in `package.json`, just do a `npm run help` to see them:
 ```
 $ npm run help
-test | create | update | update | delete | monitor | stats
+create | update | update | delete | monitor | stats
 
 $ npm run create
 ```
 
 ## AWS CLI Help:
+NOTE:  these all exist in [package.json](package.json), just do a `npm run help` to see them:
 ```
 # To create the REST API stack:
 aws cloudformation create-stack \
