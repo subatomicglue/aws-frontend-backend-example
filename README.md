@@ -36,6 +36,13 @@ $ cd frontend && npm start
 # then open the URL listed  e.g. http://127.0.0.1:8081
 ```
 
+## Develop
+Backend:
+- Edit the Lambda function inside [aws-lambda/rest-api.yml](aws-lambda/rest-api.yml), search for `Code`.
+
+Frontend:
+- Edit the HTML code inside [frontend/src/index.html](frontend/src/index.html)
+
 ## Credits, More Reading:
 The serverless REST API is created using the rest-api cloudformation script from:
 - https://github.com/upload-io/cloudformation-lambda-examples
