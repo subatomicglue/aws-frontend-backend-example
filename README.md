@@ -17,8 +17,15 @@ see [aws-lambda/README.md](aws-lambda/README.md) for instructions to setup AWS C
 Deploy the REST API:
 ```
 $ cd aws-lambda
-$ npm run create      # or update|delete|monitor|stats
+
+$ npm run create       # or update|delete|monitor|stats
+
+$ npm run stats        # gives the URL of your service
+                       # something like
+                       # `https://4xkbm7p24a.execute-api.us-west-2.amazonaws.com/dev/hello_world`
 ```
+- Then, paste `<URL>/hello_world` into your `index.html`
+
 
 Serve the frontend:  see `frontend/README.md`
 ```
@@ -27,17 +34,6 @@ $ npm start
 
 # then open the URL listed  e.g. http://127.0.0.1:8081
 ```
-
-Edit `index.html` with the URL to your REST API.
-```
-$ cd aws-lambda
-$ npm run stats        # gives the URL of your service
-                       # something like
-                       # `https://4xkbm7p24a.execute-api.us-west-2.amazonaws.com/dev/hello_world`
-
-```
-- Then, paste `<URL>/hello_world` into your `index.html`
-- Then reload the page
 
 ## Credits, More Reading:
 The serverless REST API is created using the rest-api cloudformation script from:
