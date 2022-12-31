@@ -45,6 +45,6 @@ Frontend:
 - Edit the HTML code inside [frontend/src/index.html](frontend/src/index.html)
 
 ## Credits, More Reading:
-The serverless REST API is created using the rest-api cloudformation script from:
+The serverless REST API is created using the [rest-api-example](https://github.com/upload-io/cloudformation-lambda-examples/blob/main/cloudformation/rest-api-example.yml) cloudformation script from:
 - https://github.com/upload-io/cloudformation-lambda-examples
 
